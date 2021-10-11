@@ -2,6 +2,7 @@
 
 ## Task 
 1. Build a list with UITableView as shown in the figure:
+
         - When the user click on any cell show the cell name in an alert
         - Swipe left to delete a cell
 
