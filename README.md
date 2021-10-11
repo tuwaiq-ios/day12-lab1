@@ -1,7 +1,9 @@
 # Day12 Lab1
 
 ## Task 
-1. Build a list with UICollectionView as shown in the figure. When the user click on any cell, the name of the cell should be dispalyed in an alert. Also, user can hide any cell by dragging the cell from the right to the left.
+1. Build a list with UITableView as shown in the figure:
+        1. When the user click on any cell show the cell name in an alert
+        2. Swipe left to delete a cell
 
 ![image](https://user-images.githubusercontent.com/44459664/135745794-8329599c-25aa-443d-9d0f-a15b3b1ee4a1.png)
 
