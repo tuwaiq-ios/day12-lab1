@@ -276,6 +276,7 @@
                         <color key="badgeColor" red="0.37655716655835336" green="1" blue="0.43599332029863835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="imgCir" destination="pP1-eG-fut" id="sbK-OS-f3V"/>
                         <outlet property="tableView" destination="tsP-Pi-Ugk" id="Bdw-sj-Uis"/>
                     </connections>
                 </viewController>

@@ -28,8 +28,8 @@ class EmailT2: UIViewController, UITableViewDelegate, UITableViewDataSource{
         emailCell.titelLbl.font = UIFont.boldSystemFont(ofSize: 20.0)
         emailCell.sunTitLbl.font = UIFont.boldSystemFont(ofSize: 15)
         emailCell.letterLbl.font = UIFont.boldSystemFont(ofSize: 10)
-//        emailCell.imgLbl.layer.masksToBounds = true
-//        emailCell.imgLbl.layer.cornerRadius = imgCir.bounds.width / 2
+        emailCell.imgLbl.layer.masksToBounds = true
+        emailCell.imgLbl.layer.cornerRadius = 80 / 2
         
         return emailCell
         
@@ -37,12 +37,12 @@ class EmailT2: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
     
-//    @IBOutlet weak var imgCir: UIImageView!
+    @IBOutlet weak var imgCir: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        imgCir.layer.masksToBounds = true
-//        imgCir.layer.cornerRadius = imgCir.bounds.width / 2
+        imgCir.layer.masksToBounds = true
+        imgCir.layer.cornerRadius = imgCir.bounds.width / 2
         
         
         tableView.delegate = self
