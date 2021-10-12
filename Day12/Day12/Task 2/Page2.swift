@@ -19,20 +19,30 @@ class Page2: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let row = data2 [indexPath.row]
     
+    cell.imageCell.layer.cornerRadius = cell.imageCell.frame.height / 2
     
     cell.imageCell.image = UIImage (named: row.image)
     cell.nameCell.text = row.name
     cell.typeCell.text = row.type
     cell.messageCell.text = row.message
-    cell.timeCell.text = "\(row.time)"
-    cell.starCell.image = UIImage (named: row.star)
+    cell.timeCell.text = row.time
+    
+    if row.star{
+      cell.starCell.image = UIImage (named: "star")
+    }
+    else{
+      cell.starCell.image = UIImage (named: "starG")
+    }
     
     return cell
   }
   override func viewDidLoad() {
     TV2.delegate = self
     TV2.dataSource = self
-  
+    
+    image.layer.cornerRadius = image.frame.height / 2
+    
+    
   }
   
   @IBOutlet weak var TV2: UITableView!

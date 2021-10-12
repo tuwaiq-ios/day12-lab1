@@ -16,6 +16,7 @@
 		CC28177227144A7D00D53C82 /* Page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC28177127144A7D00D53C82 /* Page1.swift */; };
 		CC28177427144B7D00D53C82 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC28177327144B7D00D53C82 /* PageCell.swift */; };
 		CC28177627144D3400D53C82 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC28177527144D3400D53C82 /* Data.swift */; };
+		CC3F256627150456002CB1EC /* Data3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F256527150456002CB1EC /* Data3.swift */; };
 		CCD0814C27147A12009499F5 /* Page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0814B27147A12009499F5 /* Page2.swift */; };
 		CCD0814E27147A2C009499F5 /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0814D27147A2C009499F5 /* Page3.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		CC28177127144A7D00D53C82 /* Page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1.swift; sourceTree = "<group>"; };
 		CC28177327144B7D00D53C82 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		CC28177527144D3400D53C82 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		CC3F256527150456002CB1EC /* Data3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data3.swift; sourceTree = "<group>"; };
 		CCD0814B27147A12009499F5 /* Page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2.swift; sourceTree = "<group>"; };
 		CCD0814D27147A2C009499F5 /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD0814D27147A2C009499F5 /* Page3.swift */,
+				CC3F256527150456002CB1EC /* Data3.swift */,
 			);
 			path = "Task 3";
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				CC28175E2714495100D53C82 /* AppDelegate.swift in Sources */,
 				CC28177627144D3400D53C82 /* Data.swift in Sources */,
 				CC2432122714CA8C005E0DBE /* Data2.swift in Sources */,
+				CC3F256627150456002CB1EC /* Data3.swift in Sources */,
 				CC2817602714495100D53C82 /* SceneDelegate.swift in Sources */,
 				CCD0814E27147A2C009499F5 /* Page3.swift in Sources */,
 				CC28177427144B7D00D53C82 /* PageCell.swift in Sources */,
