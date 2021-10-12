@@ -10,37 +10,44 @@ let list = ["Make Wiretframing","Meeting With Team","make smartphone app concept
 
 class VC3: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var rTable: UITableView!
-    var randomNumber = arc4random_uniform(20)
-    var randomColor = arc4random()
-
-    //Color Background randomly
-    func colorBackground() {
-
-        // TODO: set a random color
-        view.backgroundColor = UIColor.yellow
-
-    }
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let listR = list[indexPath.row]
+      
+    
+       
         let rCell = tableView.dequeueReusableCell(withIdentifier: "222", for: indexPath) as! CCell
         
-            var randomNumber = arc4random_uniform(20)
-            var randomColor = arc4random()
-
-            //Color Background randomly
-            func colorBackground() {
-
-                // TODO: set a random color
-                view.backgroundColor = UIColor.yellow
-
+        rCell.label.text = list[indexPath.row]
+        
+        if indexPath.row  == 0 {
+            rCell.label.backgroundColor = UIColor.systemMint
             
         }
         
-        rCell.label.text = list[indexPath.row]
+        else if  indexPath.row == 1 {
+           
+            rCell.label.backgroundColor = UIColor.lightGray
+        }
+        
+        else if  indexPath.row == 2 {
+           
+            rCell.label.backgroundColor = UIColor.red
+        }
+        
+        else if  indexPath.row == 3 {
+           
+            rCell.label.backgroundColor = UIColor.purple
+        }
+        
+        else if  indexPath.row == 4 {
+           
+            rCell.label.backgroundColor = UIColor.yellow
+        }
+     
         return rCell
     }
     
