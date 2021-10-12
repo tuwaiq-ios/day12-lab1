@@ -7,22 +7,34 @@
 
 import UIKit
 
-let Reminders: [String] = ["Make Wireframing", "Meeting with new team", "Make smartphone app concept", "Pick up Loundry", "Drink Milk"]
+let reminder: [String] =
+  ["Making Wireframing","Meeting with new team","Make smartPhone app concept","Pick up loundry","Drink milk"]
+let colors: [UIColor] = [
+    UIColor.blue, UIColor.brown ,
+    UIColor.cyan, UIColor.purple ,
+    UIColor.gray, UIColor.orange,
+
+    
+]
+
 
 class viewcontroller3: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
     @IBOutlet var tableView: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Reminders.count
+        return reminder.count
     }
     
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let reminder = Reminders[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! tablecell
+        let reminderCell = reminder[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! tablecell3
         
+        cell.labelName.text = reminderCell
+        cell.labelName.backgroundColor = colors[indexPath.row]
+     
         return cell
     }
     
@@ -35,7 +47,8 @@ class viewcontroller3: UIViewController, UITableViewDelegate, UITableViewDataSou
     
 }
 
-class tablecell: UITableViewCell{
+class tablecell3: UITableViewCell{
     
+    @IBOutlet weak var labelName: UILabel!
     
 }
