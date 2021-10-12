@@ -7,8 +7,8 @@
 
 import UIKit
 
-let message = [ "Hello" , "..." , "..." , "..." ]
 
+let message = [ "Clean The Apartment" , "Go to the Pharmesy" , "Meeting with new Teem" , "call Dady" ]
 
 class VC1: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -21,14 +21,15 @@ class VC1: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let afnancell = tableview.dequeueReusableCell(withIdentifier: "123", for: indexPath) as! 
+        let afnancell = tableview.dequeueReusableCell(withIdentifier: "123", for: indexPath) as! task3cell
         
-        afnancell.label1.text = message[indexPath.row]
+        afnancell.Messagelabel.text = message[indexPath.row]
         
         if indexPath.row % 2 == 0 {
-            afnancell.label1.backgroundColor = UIColor.systemPink
+            
+            afnancell.Messagelabel.backgroundColor = UIColor.systemCyan
         } else {
-            afnancell.label1.backgroundColor = UIColor.systemYellow
+            afnancell.Messagelabel.backgroundColor = UIColor.systemFill
         }
         
         return afnancell
@@ -39,9 +40,22 @@ class VC1: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let messages = message[indexPath.row]
         
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableview.delegate = self
+        tableview.dataSource = self
+        
+        
+    }
 }
 
 class task3cell: UITableViewCell {
     
+    @IBOutlet weak var Messagelabel: UILabel!
+    
+    
     
 }
+    
+

@@ -14,7 +14,7 @@ class emillist: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let subtitile: String
         let message: String
         let image: String
-        let isfavorit: String
+        let isfavorit: Bool
         
         
     }
@@ -24,23 +24,23 @@ class emillist: UIViewController,UITableViewDelegate,UITableViewDataSource {
         email(title: "Sara",
               subtitile: "important",
               message: "send the file with attachment",
-              image: "",
-              isfavorit: "redstar"),
+              image: "sara",
+              isfavorit: true),
         email(title: "TUAIQ-Academy",
               subtitile: "cogratulation",
               message: "you are accepted in TUAIQ-Academy",
-              image: "",
-              isfavorit: "emptystar"),
+              image: "tuaiq",
+              isfavorit: false),
         email(title: "Al-Bilad-Bank",
               subtitile: "Attention",
               message: "you have to visit us in the our brunch",
-              image: "",
-              isfavorit: ""),
+              image: "Albilad",
+              isfavorit: true),
         email(title: "",
               subtitile: "",
               message: "",
               image: "",
-              isfavorit: "")
+              isfavorit: false)
         
     
     
@@ -56,19 +56,32 @@ class emillist: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let user = listmail[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "hi", for: indexPath) as! emailcell
         
-        inboxlabel.text = "Inbox"
-        unreadlbl.text = "2-Unread"
-        personimage.image = UIImage (named: "personimage")
+        cell.emailimage.image = UIImage (named: "personimage")
+        cell.title.text = user.title
+        cell.subtitle.text = user.subtitile
+        cell.message.text = user.message
+        cell.favoriteimage.image = UIImage (named: "emptystar")
         
-        return cell
-    }
+        if user.isfavorit {
+            cell.favoriteimage.image = UIImage (named: "redstar")
+            }else{
+                cell.favoriteimage.image = UIImage (named: "emptystar")
+            }
+
+            
+            return cell
+        }
+        
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        inboxlabel.text = "Inbox"
-        unreadlbl.text = "2-Unread"
-        personimage.image = UIImage (named: "personimage")
+        MailList.delegate = self
+        MailList.dataSource = self
+        
+
     }
     
     

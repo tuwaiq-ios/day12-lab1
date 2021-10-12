@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		680FC2672714E0280067003E /* task3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680FC2662714E0280067003E /* task3.swift */; };
 		680FC2692714E04C0067003E /* Assest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680FC2682714E04C0067003E /* Assest.xcassets */; };
+		680FC26B27155C160067003E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680FC26A27155C160067003E /* Assets.xcassets */; };
 		6894CF362714499500A9116A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6894CF352714499500A9116A /* AppDelegate.swift */; };
 		6894CF382714499500A9116A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6894CF372714499500A9116A /* SceneDelegate.swift */; };
 		6894CF3A2714499500A9116A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6894CF392714499500A9116A /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		680FC2662714E0280067003E /* task3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task3.swift; sourceTree = "<group>"; };
 		680FC2682714E04C0067003E /* Assest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assest.xcassets; path = ../Assest.xcassets; sourceTree = "<group>"; };
+		680FC26A27155C160067003E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../TestApp/TestApp/Assets.xcassets; sourceTree = "<group>"; };
 		6894CF322714499500A9116A /* Day12-Afnan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day12-Afnan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6894CF352714499500A9116A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6894CF372714499500A9116A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		6894CF342714499500A9116A /* Day12-Afnan */ = {
 			isa = PBXGroup;
 			children = (
+				680FC26A27155C160067003E /* Assets.xcassets */,
 				6894CF352714499500A9116A /* AppDelegate.swift */,
 				6894CF372714499500A9116A /* SceneDelegate.swift */,
 				6894CF4D2714766600A9116A /* Task 1 */,
@@ -178,6 +181,7 @@
 			files = (
 				680FC2692714E04C0067003E /* Assest.xcassets in Resources */,
 				6894CF422714499700A9116A /* LaunchScreen.storyboard in Resources */,
+				680FC26B27155C160067003E /* Assets.xcassets in Resources */,
 				6894CF3D2714499500A9116A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,8 +344,8 @@
 		6894CF472714499700A9116A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8U2GBY9XAF;
@@ -368,8 +372,8 @@
 		6894CF482714499700A9116A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8U2GBY9XAF;

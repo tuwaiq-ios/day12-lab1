@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.name?.text = rows[indexPath.row]
         cell.nameimage.image = UIImage (systemName: rows[indexPath.row] )
         
-        
+
         
         return cell
     }
