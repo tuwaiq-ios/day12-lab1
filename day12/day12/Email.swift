@@ -39,27 +39,16 @@ class Email: UIViewController,UITableViewDelegate,UITableViewDataSource {
             }
     
     
-    class meilCell:UITableViewCell {
-       
-        @IBOutlet weak var SaraMail: meilCell!
-        
-        
-        @IBOutlet weak var imageMail: UIImageView!
-    @IBOutlet weak var mailTaitle: UILabel!
-    @IBOutlet weak var mailSubTitle: UILabel!
-    @IBOutlet weak var mailTime: UILabel!
-    @IBOutlet weak var mailFaivort: UIImageView!
-    @IBOutlet weak var mailMessage:  UILabel!
-    }
+
     
 }
     struct mail {
-        let title:String
-        let subTitle:String
-        let message:String
-        let image:String
-        var time:String
-        var fav:String
+        let title : String
+        let subTitle : String
+        let message : String
+        let image : String
+        var time : String
+        var fav : String
         
     
 }
@@ -69,29 +58,46 @@ class Email: UIViewController,UITableViewDelegate,UITableViewDataSource {
 var emails = [mail(title: "American Canyon",
                    subTitle: "Hot summer sale!",
                    message: "the boldest styles now at most adven...",
-                   image: "m1",
+                   image: "m5",
                    time: "AD",
                    fav: "⭐️"),
               mail(title: " Reese, Willy, Me, Dani",
                    subTitle: "Are you Ready to 🌊🌊🌊?",
                     message: "Gonna be so fun!! Here's the deets:..",
-                   image: "m1",
+                   image: "m2",
                    time: "10m",
                    fav: "⭐️"),
               mail(title: "O + X Outfitters",
                 subTitle: "Online shoping",
                 message: "Flash Sale !20% off all summer swim ...",
-                                   image: "m1",
+                                   image: "m3",
                                    time: "1h",
                                    fav: "⭐️"),
               mail(title: "Gabrielle Brown",
                    subTitle: "Qoute for repairs",
                     message: "Hi Thaisa attached is a quote for all...",
-                   image: "m1",
+                   image: "m4",
                    time: "2h",
                    fav: "⭐️"),
 
 ]
+
+
+class meilCell : UITableViewCell {
+    
+    @IBOutlet weak var imageMail: UIImageView!
+    
+    @IBOutlet weak var mailTaitle: UILabel!
+    
+    @IBOutlet weak var mailSubTitle: UILabel!
+    
+    @IBOutlet weak var mailMessage: UILabel!
+    
+    @IBOutlet weak var mailFaivort: UIImageView!
+    
+    @IBOutlet weak var mailTime: UILabel!
+    
+}
 //func
 
 
