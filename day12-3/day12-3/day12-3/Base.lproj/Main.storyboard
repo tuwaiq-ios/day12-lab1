@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="day12_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="o57-am-cgW">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1b" rowHeight="157" id="yqP-29-dOo" customClass="Labelcell" customModule="day12_3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yqP-29-dOo" id="nnx-Q6-cut">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAJ-gl-OK5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iAJ-gl-OK5" firstAttribute="leading" secondItem="nnx-Q6-cut" secondAttribute="leading" id="Hkp-mg-fy8"/>
+                                                <constraint firstAttribute="bottom" secondItem="iAJ-gl-OK5" secondAttribute="bottom" id="Jou-bV-QPW"/>
+                                                <constraint firstAttribute="trailing" secondItem="iAJ-gl-OK5" secondAttribute="trailing" id="T8t-4Z-sZj"/>
+                                                <constraint firstItem="iAJ-gl-OK5" firstAttribute="top" secondItem="nnx-Q6-cut" secondAttribute="top" id="ixj-uK-L7z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelcell" destination="iAJ-gl-OK5" id="kyh-yp-6pW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1e-bI-bbj">
+                                <rect key="frame" x="185" y="118" width="44" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="KsU-gX-YUY"/>
+                                    <constraint firstAttribute="height" constant="31" id="lQh-FL-WVp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veA-BH-HPl">
+                                <rect key="frame" x="183.5" y="72" width="47" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="2mk-eK-c3M"/>
+                                    <constraint firstAttribute="height" constant="31" id="eWD-SZ-ccz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="seal" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o57-am-cgW" firstAttribute="top" secondItem="veA-BH-HPl" secondAttribute="bottom" constant="41" id="8Kz-kz-Xf7"/>
+                            <constraint firstItem="f1e-bI-bbj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Byx-8D-Yic"/>
+                            <constraint firstItem="f1e-bI-bbj" firstAttribute="top" secondItem="veA-BH-HPl" secondAttribute="bottom" constant="15" id="DUX-Gu-TGA"/>
+                            <constraint firstItem="veA-BH-HPl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GH6-e9-kVR"/>
+                            <constraint firstItem="veA-BH-HPl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="Kmc-gv-gjf"/>
+                            <constraint firstItem="o57-am-cgW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="S6i-gP-0oO"/>
+                            <constraint firstItem="o57-am-cgW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tyr-Vd-3w5"/>
+                            <constraint firstItem="o57-am-cgW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XEv-3N-Eon"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tabelview" destination="o57-am-cgW" id="mdi-36-Z9Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="seal" catalog="system" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
