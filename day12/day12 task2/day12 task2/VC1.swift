@@ -16,6 +16,7 @@ class VC1 : UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
     }
+    @IBOutlet weak var tableView: UITableView!
     
     //
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -26,14 +27,22 @@ class VC1 : UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
         
-        cell.title.text = Ms.title
-        cell.subtitle.text =
+        cell.Ms.text = ce.Title
+        cell.subtitle.text = ce .SupTitle
+        cell.Msg.text = ce.Ms
+        cell.logo.image = UIImage(named: ce.iconMail)
+        cell.stsr.image = UIImage(named: ce.isFavorite)
         
+        
+        return cell
     
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
         
     }
 }

@@ -13,7 +13,7 @@ struct Email {
     let SupTitle: String
     let Ms : String
     let iconMail: String
-    let isFavorite: Bool
+    let isFavorite: String
     
 }
 
@@ -22,19 +22,19 @@ Email(Title: "AhmedAli",
       SupTitle: "مرحبا",
       Ms: "اهلا السلام عليكم ...",
       iconMail: "A",
-      isFavorite: true),
+      isFavorite: "starY"),
 
 Email(Title: "Mohammed",
       SupTitle: "welcome",
       Ms: "Hi daer Ahmed ...",
       iconMail: "B",
-      isFavorite: true),
+      isFavorite: "starY"),
 
 Email(Title: "تويتر",
       SupTitle: "قام بتغريد  A & B",
       Ms: "ابرز العناوين ...",
-      iconMail: "C",
-      isFavorite: true)
+      iconMail: "tt",
+      isFavorite: "starB")
 
 
 

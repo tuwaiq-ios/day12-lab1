@@ -14,8 +14,7 @@ class Cell : UITableViewCell {
     
     @IBOutlet weak var Ms: UILabel!
     
-    @IBOutlet weak var subtitle: UILabel!
-    
+   @IBOutlet weak var subtitle: UILabel!
     @IBOutlet weak var Msg: UILabel!
     
     @IBOutlet weak var logo: UIImageView!
